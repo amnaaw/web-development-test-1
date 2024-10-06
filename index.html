@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            margin: 1em;
+            padding: 1em;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        .reviews, .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .review, .blog {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            margin: 1em;
+            padding: 1em;
+            width: 300px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        footer form {
+            margin-top: 1em;
+        }
+
+        footer form input[type="email"] {
+            padding: 0.5em;
+            width: 200px;
+        }
+
+        footer form button {
+            padding: 0.5em 1em;
+        }
+
+        @media (max-width: 768px) {
+            .card, .review, .blog {
+                width: 90%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Travel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Top Destinations</a></li>
+                <li><a href="#packages">Featured Packages</a></li>
+                <li><a href="#reviews">Clients Reviews</a></li>
+                <li><a href="#blogs">Latest Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Top Destinations -->
+        <section id="destinations" class="section">
+            <h2>Top Destinations</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.5a3_PXvVUj6UsTCnFtLTtAHaE7?w=255&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="bhutan">
+                <h3>Bhutan</h3>
+                    <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.7CVJ2d29GvD0CjmojqgOQAHaE8?w=257&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Japan">
+                    <h3>Japan</h3>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.CVt6iuyWnyjF9tPuqyDfWQHaE1?w=303&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Nepal">
+                    <h3>Nepal</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Packages -->
+        <section id="packages" class="section">
+            <h2>Featured Packages</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.H-mOxQ5Nz48R7tNfQ3UWAgHaDq?w=309&h=172&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Thailand City Tour">
+                    <h3>Thailand City Tour</h3>
+                    <p>$200</p>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.2tl4ld6cz0SL0Od4jN95WwHaEc?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Laos City Tour">
+                    <h3>Laos City Tour</h3>
+                    <p>$180</p>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.fNYq26x92SqE8RtP-nEL9AHaFZ?w=220&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Singapore City Tour">
+                    <h3>Singapore City Tour</h3>
+                    <p>$220</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Reviews -->
+        <section id="reviews" class="section">
+            <h2>Clients Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p>"Great experience!"</p>
+                    <p>- John Doe</p>
+                </div>
+                <div class="review">
+                    <p>"Loved the trip!"</p>
+                    <p>- Jane Smith</p>
+                </div>
+                <div class="review">
+                    <p>"Amazing service!"</p>
+                    <p>- Mark Wilson</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Blogs -->
+        <section id="blogs" class="section">
+            <h2>Latest Blogs</h2>
+            <div class="blogs">
+                <div class="blog">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/10/17/00/mountains-8379756_640.jpg" alt="Blog 1">
+                    <h3>Blog Title 1</h3>
+                    <p>Short description of blog 1.</p>
+                </div>
+                <div class="blog">
+                    <img src= "https://cdn.pixabay.com/photo/2023/01/08/16/29/sea-7705679_640.jpg" alt="Blog 2">
+                    <h3>Blog Title 2</h3>
+                    <p>Short description of blog 2.</p>
+                </div>
+                <div class="blog">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_640.jpg" alt="Blog 3">
+                    <h3>Blog Title 3</h3>
+                    <p>Short description of blog 3.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Subscribe to our newsletter for updates</p>
+        <form>
+            <input type="email" placeholder="Your email">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Travel Agency</p>
+    </footer>
+</body>
+</html>
